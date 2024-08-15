@@ -1,6 +1,6 @@
-## coscription项目合约
+## coscription contracts
 
-### 合约部署地址
+### contract address
 | Contract name     | Network      |            Contract address                 |
 | ----------------- | -------------| ------------------------------------------  | 
 | CoscriptionRecord | Bsc-main     | 0x436b051521B7Bb62C2EAe170Ba09d7d9f68700C6  | 
