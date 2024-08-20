@@ -76,7 +76,7 @@ contract CoscriptionRecord is Ownable {
             block.timestamp
         );
         userPayed[msg.sender] += msg.value;
-        userNonces[msg.sender] += 1;
+        ++userNonces[msg.sender];
     }
 
     function getUserNonce(address _user) external view returns (uint256) {
