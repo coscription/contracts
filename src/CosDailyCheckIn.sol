@@ -23,7 +23,7 @@ contract CosDailyCheckIn is Ownable {
         uint256 lastTime = dailyCheckTimeMap[msg.sender];
         require(day > lastTime, "daily check time has not arrived");
         dailyCheckTimeMap[msg.sender] = day;
-        userAccumulativeCheckIn[msg.sender] += 1;
+        ++userAccumulativeCheckIn[msg.sender];
 
         (bool success, ) = payable(msg.sender).call{value: txFee}("");
         require(success, "NOT ENOUGH ETHER TO SEND!");
